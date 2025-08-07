@@ -1,0 +1,17 @@
+{
+    "name": "Go Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "settings": {
+        "go.useLanguageServer": true,
+        "go.toolsEnvVars": {
+            "GO111MODULE": "on"
+        }
+    },
+    "extensions": [
+        "golang.go"
+    ],
+    "postCreateCommand": "go get golang.org/x/lint/golint && go get golang.org/x/tools/gopls"
+}
