@@ -10,12 +10,14 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+*.cover
 
 # Dependency directories
 vendor/
 
 # Go workspace file
 go.work
+go.work.sum
 
 # IDE specific files
 .vscode/
@@ -38,6 +40,12 @@ Thumbs.db
 
 # Built binaries
 afv
+afvikle
+afvikle.exe
+
+# Database files (runtime data)
+*.db
+afvikle.db
 
 # Temporary files
 *.tmp
@@ -46,3 +54,36 @@ afv
 # Coverage reports
 coverage.txt
 coverage.html
+coverage.out
+coverage
+profile.out
+
+# Database files (runtime data)
+*.db
+
+# CI/CD artifacts
+.terraform/
+.terraform.lock.hcl
+
+# Development tools
+.air.toml
+.env
+.env.local
+.env.*.local
+
+# Documentation build artifacts
+site/
+docs/_build/
+
+# Benchmarking
+*.bench
+
+# Profiling
+*.prof
+*.pprof
+cpu.prof
+mem.prof
+
+# Go module cache (if using local vendor)
+pkg/
+bin/
